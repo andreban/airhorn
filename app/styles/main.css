@@ -52,24 +52,33 @@ body
     flex-direction: column;
 }
 
-#installer {
+#installer, #connect {
     position: absolute;
-    opacity: 0;
     top: 0;
-    right: 0;
+    width: 100px;
     text-align: center;
     transition: opacity 300ms ease-in-out;
+    opacity: 0;
 }
 
-#installer.available {
+#installer {
+    right: 20px;
+}
+
+#connect {
+    right: 125px;
+}
+
+#installer.available, #connect.available {
     opacity: 1;
 }
 
-#installer .button {
+.button {
     border: white 1px solid;
     margin:10px;
     padding: 10px;
     color: white;
+    width: 100%;
     background-color: transparent;
 }
 
