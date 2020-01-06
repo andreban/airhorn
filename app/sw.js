@@ -17,7 +17,7 @@
  *
  */
 
-const version = "0.6.18";
+const version = "0.7.0-webusb";
 const cacheName = `airhorner-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
